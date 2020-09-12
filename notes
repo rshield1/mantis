@@ -1,0 +1,25 @@
+Users
+:has many :favorites 
+
+username:
+password:
+city:
+
+
+
+
+
+Favorites
+:belongs to :users
+:has many :comments
+
+name:
+owner:
+number:
+location:
+
+
+
+
+Comment
+belongs to :favorites
