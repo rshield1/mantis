@@ -5,3 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+100.times do 
+    photos = Photo.create(isFavorite: false, url: "https://source.unsplash.com/random/800x600")
+end
