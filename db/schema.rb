@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(version: 2020_10_04_022257) do
   create_table "photos", force: :cascade do |t|
     t.boolean "isFavorite"
     t.string "url"
+    t.float "price"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
