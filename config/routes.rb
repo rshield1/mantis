@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
     # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-    resource :users, only: [:create]
+  resource :users, only: [:create]
+  resources :photos
     post "/login", to: "users#login"
     get "/auto_login", to: "users#auto_login"
-  resources :photos
+  
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
